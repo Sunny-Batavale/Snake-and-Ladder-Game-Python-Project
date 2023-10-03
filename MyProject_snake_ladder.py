@@ -33,7 +33,7 @@ grass1 = Image.open("images\grass1.jpg")
 leafs = Image.open("images\leafs.jpg")
 
 
-#REsizing the Images
+#Resizing the Images
 player1_image = player1_image.resize((SQUARE_SIZE - 20, SQUARE_SIZE - 20), Image.ANTIALIAS)
 player2_image = player2_image.resize((SQUARE_SIZE - 40, SQUARE_SIZE - 35), Image.ANTIALIAS)
 snake1_image = snake1_image.resize((SQUARE_SIZE - 20, 350), Image.ANTIALIAS)
@@ -276,7 +276,7 @@ def open_game_window():
     player1 = canvas.create_image(SQUARE_SIZE // 1.5, (BOARD_SIZE - 1) * SQUARE_SIZE + SQUARE_SIZE // 2.3, image=player1_img)
     player2 = canvas.create_image(SQUARE_SIZE // 3.3, (BOARD_SIZE - 1) * SQUARE_SIZE + SQUARE_SIZE // 1.8, image=player2_img)
 
-    # Create the dice roll button
+    # Creating the dice roll button
     roll_button = Button(game_window, text="Roll Dice",relief="raised",padx=20,pady=10,border=5,
                          font=("Times New Roman", 20, "bold"), 
                          foreground="maroon", command=roll_dice)
